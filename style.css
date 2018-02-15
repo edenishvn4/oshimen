@@ -1,0 +1,55 @@
+body{
+    background: purple;
+    text-align: center;
+}
+p{
+   font-family: 'Comfortaa';  
+}
+h1{
+    font-family: 'Sofia';
+}
+#konten{
+    max-width: 1100px;
+    height: 2000px;
+    background: plum;
+    margin: 0 auto;/*semua margin untuk konten di html dimulai dari kiri atas*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows: 100px 200px 300px; */
+    /* grid-template-rows: 1fr 2fr 1fr; */
+    grid-template-areas:
+    "area0 area0 area0" 
+    "area1 area2 area2"
+    ". . .";
+    grid-gap: 20px;
+}
+#konten div{
+    padding: 30px;
+}
+
+.head{
+    grid-area: area0;
+}
+.foto{
+    grid-area: area1;
+}
+.detail{
+    grid-area: area2;
+}
+.kolom{
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: 20px;
+}
+#silly{
+    width: 70%;
+    height: auto;
+}
+#verif{
+    max-width: 10%;
+    height: auto;
+}
+.kotak1,.kotak2,.kotak3,.kotak4,.kotak5,.kotak6,.kotak7,.kotak8,.kotak9{
+    width: 200px;
+    height: 300px;
+}
